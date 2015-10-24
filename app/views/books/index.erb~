@@ -1,0 +1,17 @@
+<h1>Listing Books</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Date of publish</th>
+    <th>Author</th>
+  </tr>
+
+  <% @books.each do |book| %>
+      <tr>
+        <td><%= book.name %></td>
+        <td><%= book.published %></td>
+        <td><%= book.author %></td>
+      </tr>
+  <% end %>
+</table>

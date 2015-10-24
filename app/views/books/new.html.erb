@@ -1,0 +1,11 @@
+<h1>Uue raamatu lisamine</h1>
+
+<%= form_for @book do |b| %>
+    <label>Raamatu pealkiri: </label><%= b.text_field :name %><br>
+    <label>Raamatu ilmumise aasta: </label><%= b.number_field :published %><br>
+    <label>Raamatu autor: </label><%= b.text_field :author %><br>
+    <%= b.submit 'Sisesta!' %>
+<% end %>
+
+<br>
+<%= link_to 'Tagasi raamatute pealehele', books_path %>

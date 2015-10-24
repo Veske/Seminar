@@ -1,0 +1,8 @@
+<h1>Show book</h1>
+
+<p>Name: <%= @book.name %></p>
+<p>Published: <%= @book.published %></p>
+<p>Author: <%= @book.author %></p>
+
+<%= link_to 'Edit', edit_book_path(@book) %><br>
+<%= link_to 'Back to books', books_path %>

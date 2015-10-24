@@ -1,0 +1,10 @@
+<h1>Raamatu: <%= @book.name %> muutmise leht</h1>
+			
+<%= form_for @book do |b| %>
+	<%= b.text_field :name %>
+	<%= b.number_field :published %>
+	<%= b.text_field :author %>
+	<%= b.submit 'Muuda!' %></br>
+<% end %>			
+			
+<%= link_to 'Tagasi raamatute pealehele', books_path %>

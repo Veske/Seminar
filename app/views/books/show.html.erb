@@ -1,0 +1,8 @@
+<h1>Raamatu vaade</h1>
+			
+<p>Pealkiri: <%= @book.name %></p>
+<p>Valjalaske aasta: <%= @book.published %></p>
+<p>Autor: <%= @book.author %></p>
+			
+<%= link_to 'Muuda raamatut', edit_book_path(@book) %><br>
+<%= link_to 'Tagasi raamatute pealehele', books_path %>
